@@ -1,0 +1,47 @@
+{
+    "name": "infinety-es/translator",
+    "description": "An Eloquent translator for Laravel (Custom)",
+    "keywords": ["eloquent", "language", "laravel", "locale", "multilingual", "translation", "translations", "translator", "infinety"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Klaiber",
+            "email": "hello@vinkla.com"
+        },
+        {
+            "name": "Eric Lagarda",
+            "email": "info@ericlagarda.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.* || 5.2.*"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^3.1",
+        "phpunit/phpunit": "^4.8 || ^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Infinety\\Translator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Infinety\\Tests\\Translator\\": "tests/"
+        },
+        "classmap": [
+            "tests/database"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
